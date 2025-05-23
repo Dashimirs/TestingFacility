@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crumbogar testing tab</title>
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: monospace;
+      padding: 20px;
+    }
+    .output {
+      white-space: pre-line; /* preserve line breaks */
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Crumbogar testing facility</h1>
+
+  <div id="output" class="output"></div>
+
+  <script>
+    const outputEl = document.getElementById("output");
+
+    function print(text) {
+      outputEl.textContent += text + "\n";
+    }
+
+    // Variables
+    let name = "Great Crumbogar";
+    const PI = 3.1415;
+
+    // Function with default param
+    function greet(person = "stranger") {
+      return `Hello, ${person}!`;
+    }
+    print(greet(name));
+	print("Now we are testing stuff!")
+
+  </script>
+</body>
+</html>
